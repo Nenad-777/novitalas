@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NOVI TALAS — Tvoj prozor u svet</title>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (Lora 400/600/700/800 + Crimson Pro + Playfair italic) -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700;800&family=Crimson+Pro:wght@400;600&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
@@ -15,7 +15,7 @@
   <!-- Gornja crna traka -->
   <header class="topnav">
     <div class="wrap">
-      <a class="brand" href="#">NOVI <span>TALAS</span></a>
+      <a class="brand" href="index.html">NOVI <span>TALAS</span></a>
       <nav class="nav">
         <a href="#">Geopolitika</a>
         <a href="#">Obaveštajni izvori</a>
@@ -38,54 +38,79 @@
   <main class="page">
     <div class="wrap content-grid">
 
-      <!-- Leva kolona -->
-      <article class="feature">
+      <!-- Leva kolona: GLAVNA VEST -->
+      <article class="feature" id="v1">
         <header class="kicker">GEOPOLITIKA</header>
         <h1 class="headline">Italija i Španija šalju ratne brodove u zaštitu flotile za Gazu</h1>
-        <p class="dek">Rimski i madridski potez da prate flotilu humanitarnih aktivista otvara novo poglavlje evropskog angažmana na Bliskom istoku. Izrael upozorava na „neprihvatljivo mešanje“.</p>
+        <p class="dek">
+          Rimski i madridski potez da prate flotilu humanitarnih aktivista otvara novo poglavlje evropskog angažmana na Bliskom istoku.
+          Izrael upozorava na „neprihvatljivo mešanje“.
+        </p>
         <figure class="feature-media">
-          <img src="img/vest1_flota.png?v=2" alt="Stilizovana flota ratnih brodova — editorial ilustracija" />
+          <img src="img/vest1_flota.png?v=3" alt="Stilizovana flota ratnih brodova — editorial ilustracija" />
         </figure>
       </article>
 
-      <!-- Desna kolona -->
+      <!-- Desna kolona: PRATEĆE VESTI -->
       <aside class="rail">
         <ul class="rail-list">
-          <li class="rail-item">
+
+          <!-- 2) Tramp – kulturni rat -->
+          <li class="rail-item" id="v2">
             <div class="rail-text">
               <div class="kicker">DIPLOMATIJA</div>
-              <a class="rail-title" href="#">Tramp pokreće kulturni rat protiv Evrope</a>
-              <div class="bydek">Izveštaji ukazuju na podršku evropskoj krajnjoj desnici, sa ciljem potkopavanja liberalnih institucija i jedinstva EU.</div>
+              <a class="rail-title" href="#">
+                Tramp pokreće kulturni rat protiv Evrope
+              </a>
+              <div class="bydek">
+                Izveštaji ukazuju na podršku evropskoj krajnjoj desnici, sa ciljem potkopavanja liberalnih institucija i jedinstva EU.
+              </div>
             </div>
-            <img class="rail-thumb" src="img/vest2_kulturni_rat.png?v=2" alt="Sukob narativa SAD i Evrope preko Atlantika">
+            <img class="rail-thumb" src="img/vest2_kulturni_rat.png?v=3" alt="Sukob narativa SAD i Evrope preko Atlantika">
           </li>
 
-          <li class="rail-item">
+          <!-- 3) Generalni štrajk u Italiji -->
+          <li class="rail-item" id="v3">
             <div class="rail-text">
               <div class="kicker">PROTESTI</div>
-              <a class="rail-title" href="#">Generalni štrajk u Italiji zbog rata u Gazi</a>
-              <div class="bydek">Rim, Milano i Đenova pod blokadama; autonomni sindikati zaustavljaju prevoz i deo javnih službi.</div>
+              <a class="rail-title" href="#">
+                Generalni štrajk u Italiji zbog rata u Gazi
+              </a>
+              <div class="bydek">
+                Rim, Milano i Đenova pod blokadama; autonomni sindikati zaustavljaju prevoz i deo javnih službi.
+              </div>
             </div>
-            <img class="rail-thumb" src="imh/vest3_strajk_italija.png?v=2" alt="Stilizovani protesti i blokade luka u Italiji">
+            <img class="rail-thumb" src="img/vest3_strajk_italija.png?v=3" alt="Stilizovani protesti i blokade luka u Italiji">
           </li>
 
-          <li class="rail-item">
+          <!-- 4) EU u UN – multilateralizam -->
+          <li class="rail-item" id="v4">
             <div class="rail-text">
               <div class="kicker">UN GENERALNA SKUPŠTINA</div>
-              <a class="rail-title" href="#">EU potvrđuje opredeljenost za multilateralizam</a>
-              <div class="bydek">Evropski lideri insistiraju na jačanju međunarodnih institucija naspram rastućeg unilateralizma.</div>
+              <a class="rail-title" href="#">
+                EU potvrđuje opredeljenost za multilateralizam
+              </a>
+              <div class="bydek">
+                Na 80. zasedanju UN evropski lideri insistiraju na jačanju međunarodnih institucija naspram rastućeg unilateralizma.
+              </div>
             </div>
-            <img class="rail-thumb" src="img/vest4_un_eu.png?v=2" alt="Apstraktna UN sala i mreža multilateralnih odnosa">
+            <img class="rail-thumb" src="img/vest4_un_eu.png?v=3" alt="Apstraktna UN sala i mreža multilateralnih veza">
           </li>
 
-          <li class="rail-item">
+          <!-- 5) Poljska – NATO konsultacije -->
+          <li class="rail-item" id="v5">
             <div class="rail-text">
               <div class="kicker">BEZBEDNOST</div>
-              <a class="rail-title" href="#">Poljska aktivira konsultacije u NATO zbog ruskih dronova</a>
-              <div class="bydek">Varšava traži podršku saveznika; NATO pojačava nadzor u okviru misije „Eastern Sentry“.</div>
+              <a class="rail-title" href="#">
+                Poljska aktivira konsultacije u NATO zbog ruskih dronova
+              </a>
+              <div class="bydek">
+                Posle ulaska dronova u poljski vazdušni prostor, Varšava traži konsultacije po članu 4. NATO pojačava nadzor u sklopu „Eastern Sentry“.
+              </div>
             </div>
-            <img class="rail-thumb" src="img/vest5_poljska_nato.png?v=2" alt="Radarski snopovi i siluete dronova">
+            <img class="rail-thumb" src="img/vest5_poljska_nato.png?v=3" alt="Radarski snopovi i siluete dronova iznad granice">
           </li>
+
         </ul>
 
         <!-- Arhiva broja -->
@@ -107,4 +132,3 @@
 
 </body>
 </html>
-
