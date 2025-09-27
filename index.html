@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NOVI TALAS — Tvoj prozor u svet</title>
 
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Crimson+Pro:wght@400;600&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,66 +17,130 @@
     <div class="wrap">
       <a class="brand" href="#">NOVI <span>TALAS</span></a>
       <nav class="nav">
-        <a href="#">Geopolitika</a>
-        <a href="#">Obaveštajni izvori</a>
-        <a href="#">Kultura</a>
-        <a href="#">Srbija — analiza nedelje</a>
-        <a href="#">Naša planeta</a>
+        <a href="geopolitika.html">Geopolitika</a>
+        <a href="obavestajni-izvori.html">Obaveštajni izvori</a>
+        <a href="kultura.html">Kultura</a>
+        <a href="tema-nedelje.html">Tema nedelje</a>
+        <a href="nasa-planeta.html">Naša planeta</a>
       </nav>
       <div class="motto">Veritas ante omnia</div>
     </div>
   </header>
 
-  <!-- Hero sekcija sa slikom i tekstom preko -->
+  <!-- Hero sekcija -->
   <section class="hero">
     <div class="hero-overlay">
       <p class="hero-subtitle">Vaš prozor u svet</p>
     </div>
   </section>
 
-  <!-- Glavno telo stranice -->
+  <!-- Glavni sadržaj -->
   <main class="page">
     <div class="wrap content-grid">
 
-      <!-- Leva kolona: glavna priča -->
-      <article class="feature">
+      <!-- Leva kolona: GLAVNA VEST -->
+      <article class="feature" id="v1">
         <header class="kicker">GEOPOLITIKA</header>
-        <h1 class="headline">Eskalcija energetskih udara i „duboke“ dron-operacije</h1>
-        <p class="dek">Poslednji talasi pogađaju elektro-mrežu u Odesi i Černigivu; Kijev cilja ruske rafinerije i logistiku goriva.</p>
+        <h1 class="headline">Italija i Španija šalju ratne brodove u zaštitu flotile za Gazu</h1>
+        <p class="dek">
+          Rimski i madridski potez da prate flotilu humanitarnih aktivista otvara novo poglavlje evropskog angažmana na Bliskom istoku.
+          Izrael upozorava na „neprihvatljivo mešanje“.
+        </p>
         <figure class="feature-media">
-          <img src="img/vest1.jpg" alt="Ilustracija vesti" />
+          <!-- promeni naziv slike po potrebi -->
+          <img src="img/vest1.jpg" alt="Italijanski i španski brodovi u pratnji flotile ka Gazi" />
         </figure>
+        <!-- prošireni kontekst (kratki analitički pasusi) -->
+        <p class="bydek">
+          Odluka Italije i Španije da pošalju ratne brodove u pratnju flotile humanitarnih aktivista nije tek simboličan čin. Ona označava ulazak
+          dve članice EU u zonu koja je tradicionalno pod uticajem SAD i Izraela, i to kroz formu samostalne akcije izvan NATO okvira.
+        </p>
+        <p class="bydek">
+          Za evropske prestonice ovaj potez ima dvostruki značaj: odgovara na snažan pritisak javnog mnjenja zbog rata u Gazi i testira sposobnost EU
+          da deluje autonomno. Uspeh bi otvorio prostor za redefinisanje evropske strategije na Bliskom istoku; incident sa izraelskom mornaricom
+          bio bi ozbiljan test jedinstva i kredibiliteta Unije.
+        </p>
       </article>
 
-      <!-- Desna kolona: lista vesti -->
+      <!-- Desna kolona: 4 prateće vesti -->
       <aside class="rail">
         <ul class="rail-list">
-          <li class="rail-item">
+
+          <!-- VEST 2 -->
+          <li class="rail-item" id="v2">
             <div class="rail-text">
-              <div class="kicker">GEOPOLITIKA</div>
-              <a class="rail-title" href="#">SCO dobija bezbednosni ton: sastanci Si–Modi i zajedničke poruke</a>
-              <div class="bydek">Tjendžin šalje signal otopljavanja između Pekinga i Nju Delhija, uz ambiciju „Globalnog juga“.</div>
+              <div class="kicker">DIPLOMATIJA</div>
+              <a class="rail-title" href="diplomatija.html#trump-kulturni-rat">
+                Tramp pokreće kulturni rat protiv Evrope
+              </a>
+              <div class="bydek">
+                Novi izveštaji ukazuju da američka administracija aktivno podržava evropsku krajnju desnicu, sa ciljem potkopavanja liberalnih institucija
+                i slabljenja EU jedinstva.
+              </div>
+              <div class="bydek">
+                Istraživanja ECFR i ECF sugerišu da se kulturno-ideološki front koristi kao instrument spoljne politike. Jačanje populističkih pokreta
+                uz spoljašnju logistiku moglo bi trajno da preoblikuje političku mapu kontinenta.
+              </div>
             </div>
-            <img class="rail-thumb" src="img/vest2.jpg" alt="SCO ilustracija">
+            <img class="rail-thumb" src="img/vest2.jpg" alt="Politička mapa Evrope i transatlantske tenzije">
           </li>
 
-          <li class="rail-item">
+          <!-- VEST 3 -->
+          <li class="rail-item" id="v3">
             <div class="rail-text">
-              <div class="kicker">OBAVEŠTAJNI IZVORI</div>
-              <a class="rail-title" href="#">Direktorka CIA upozorila na rast sajber pretnji</a>
-              <div class="bydek">Zajednica beleži porast državnih hakerskih operacija; naglašena potreba za međunarodnom saradnjom.</div>
+              <div class="kicker">PROTESTI</div>
+              <a class="rail-title" href="protesti.html#italija-strajk-gaza">
+                Generalni štrajk u Italiji zbog rata u Gazi
+              </a>
+              <div class="bydek">
+                Talasi protesta paralizovali su Rim, Milano i Đenovu, dok su autonomni sindikati blokirali transport i javne službe. Zabeleženi su i sukobi
+                sa policijom.
+              </div>
+              <div class="bydek">
+                Blokada luke u Đenovi dobila je simboličku težinu osporavanja vojne logistike. Vlada premijerke Meloni suočava se sa pritiskom da redefiniše
+                svoju poziciju u bliskoistočnom konfliktu.
+              </div>
             </div>
-            <img class="rail-thumb" src="img/vest3.jpg" alt="Sajber bezbednost">
+            <img class="rail-thumb" src="img/vest3.jpg" alt="Protesti i blokade u italijanskim gradovima">
           </li>
 
-          <li class="rail-item">
+          <!-- VEST 4 -->
+          <li class="rail-item" id="v4">
             <div class="rail-text">
-              <div class="kicker">NAŠA PLANETA</div>
-              <a class="rail-title" href="#">Klimatske promene ubrzavaju globalne migracije</a>
-              <div class="bydek">Ekonomski pritisci, prilagođavanja i bezbednosne implikacije postaju centralna tema.</div>
+              <div class="kicker">UN GENERALNA SKUPŠTINA</div>
+              <a class="rail-title" href="un-unga.html#eu-multilateralizam">
+                EU potvrđuje opredeljenost za multilateralizam
+              </a>
+              <div class="bydek">
+                Na 80. zasedanju UN evropski lideri insistirali su na jačanju međunarodnih institucija, dok unilateralizam i blokovska politika
+                potkopavaju globalni poredak.
+              </div>
+              <div class="bydek">
+                Za EU, multilateralizam je i geopolitička strategija i samoodbrana: kroz snažne institucije male i srednje članice zadržavaju glas
+                naspram velikih sila.
+              </div>
             </div>
-            <img class="rail-thumb" src="img/vest4.jpg" alt="Migracije i klima">
+            <img class="rail-thumb" src="img/vest4.jpg" alt="Zgrada Ujedinjenih nacija i zastave EU">
           </li>
+
+          <!-- VEST 5 -->
+          <li class="rail-item" id="v5">
+            <div class="rail-text">
+              <div class="kicker">BEZBEDNOST</div>
+              <a class="rail-title" href="bezbednost.html#poljska-nato-clan4">
+                Poljska aktivira konsultacije u NATO zbog ruskih dronova
+              </a>
+              <div class="bydek">
+                Nakon ulaska ruskih dronova u poljski vazdušni prostor, Varšava poziva na konsultacije po članu 4. NATO najavljuje mere u okviru „Eastern Sentry“.
+              </div>
+              <div class="bydek">
+                Reč je o delikatnom trenutku za Savez: svako novo kršenje može pogurati raspoređivanje dodatnih snaga i PVO kapaciteta,
+                uz rast rizika eskalacije usled pogrešne procene.
+              </div>
+            </div>
+            <img class="rail-thumb" src="img/vest5.jpg" alt="NATO granica i nadzor vazdušnog prostora">
+          </li>
+
         </ul>
 
         <!-- Arhiva broja -->
