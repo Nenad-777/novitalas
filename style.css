@@ -11,7 +11,7 @@ html, body { margin:0; padding:0; }
 body {
   background:#0b0e12;
   color:#111;
-  font: 17px/1.7 "Spectral", serif;
+  font: 17px/1.7 "Crimson Pro", serif;
 }
 
 .wrap {
@@ -40,7 +40,7 @@ body {
   letter-spacing:.18em;
   text-decoration:none;
   color:#f6f3e8;
-  font:800 22px "Playfair Display", serif;
+  font:800 22px "Lora", serif;
   text-transform: uppercase;
 }
 .brand span { color:var(--gold); }
@@ -53,17 +53,17 @@ body {
 .nav a {
   color:#d3d0d8;
   text-decoration:none;
-  font:600 14px "Inter", system-ui, sans-serif;
+  font:600 14px "Lora", serif;
 }
 .nav a:hover { color:#fff; }
 
 .motto {
   color:#bcb7a6;
-  font:600 13px "Inter", system-ui, sans-serif;
+  font:600 13px "Lora", serif;
   margin-left:16px;
 }
 
-/* ========== HERO sa pozadinom i sloganom ========== */
+/* ========== HERO ========== */
 .hero {
   background-image: url('img/pozadina.png');
   background-size: cover;
@@ -77,14 +77,8 @@ body {
 }
 
 @keyframes fadeInHero {
-  0% {
-    opacity: 0;
-    transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  0% { opacity: 0; transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 .hero-overlay {
@@ -98,23 +92,18 @@ body {
 }
 
 .hero-subtitle {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 30px;
-  color: white;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  font-family: "Playfair Display", serif;
   font-style: italic;
-  letter-spacing: 0.07em;
+  font-weight: 400;
+  font-size: 34px;
+  color: white;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
 @keyframes fadeInText {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
+  0% { opacity: 0; transform: translateX(-50%) translateY(15px); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
 /* ========== Sadržaj ========== */
@@ -129,14 +118,15 @@ body {
   gap:40px;
 }
 
+/* Naslovi i kicker */
 .kicker,
 .headline,
 .rail-title,
 .issue-meta,
 .issue-card figcaption {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Lora", serif;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .kicker {
@@ -151,8 +141,9 @@ body {
   margin:0 0 10px;
 }
 
+/* Tekst */
 .dek {
-  font-family: "Spectral", serif;
+  font-family: "Crimson Pro", serif;
   color:#555;
   margin:0 0 18px;
   font-size:18px;
@@ -198,15 +189,13 @@ body {
   text-decoration:none;
 }
 
-.rail-title:hover {
-  text-decoration:underline;
-}
+.rail-title:hover { text-decoration:underline; }
 
 .bydek {
   color:#666;
   font-size:15px;
   margin-top:6px;
-  font-family: "Spectral", serif;
+  font-family: "Crimson Pro", serif;
 }
 
 .rail-thumb {
@@ -252,60 +241,24 @@ body {
 
 .sitefoot .wrap {
   text-align:center;
-  font:600 13px "Inter", system-ui, sans-serif;
+  font:600 13px "Lora", serif;
 }
 
 /* ========== Responsive ========== */
 @media (max-width: 980px){
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-  .headline {
-    font-size: 34px;
-  }
-  .feature-media img {
-    height: 260px;
-  }
+  .content-grid { grid-template-columns: 1fr; }
+  .headline { font-size: 34px; }
+  .feature-media img { height: 260px; }
 }
 
 @media (max-width: 600px){
-  .nav,
-  .motto {
-    display:none;
-  }
-
-  .hero {
-    height: 240px;
-    background-position: 50% 40%;
-  }
-
-  .hero-subtitle {
-    font-size: 20px;
-  }
-
-  .headline {
-    font-size: 26px;
-  }
-
-  .rail-item {
-    grid-template-columns: 1fr;
-  }
-
-  .rail-thumb {
-    width: 100%;
-    height: auto;
-  }
-
-  .topnav .wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .brand {
-    font-size: 20px;
-  }
-
-  .sitefoot .wrap {
-    font-size: 12px;
-  }
+  .nav, .motto { display:none; }
+  .hero { height: 240px; background-position: 50% 40%; }
+  .hero-subtitle { font-size: 22px; }
+  .headline { font-size: 26px; }
+  .rail-item { grid-template-columns: 1fr; }
+  .rail-thumb { width: 100%; height: auto; }
+  .topnav .wrap { flex-direction: column; align-items: flex-start; }
+  .brand { font-size: 20px; }
+  .sitefoot .wrap { font-size: 12px; }
 }
