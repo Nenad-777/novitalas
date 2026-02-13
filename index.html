@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NOVI TALAS — Tvoj prozor u svet</title>
 
-  <!-- Google Fonts (Lora 400/600/700/800 + Crimson Pro 400/600 + Playfair italic) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700;800&family=Crimson+Pro:wght@400;600&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Crimson+Pro:wght@400;600&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -17,16 +15,14 @@
   <!-- Gornja crna traka -->
   <header class="topnav">
     <div class="wrap">
-      <a class="brand" href="index.html">NOVI <span>TALAS</span></a>
+      <a class="brand" href="#">NOVI <span>TALAS</span></a>
       <nav class="nav">
-  <a href="#">Geopolitika</a>
-  <a href="#">Obaveštajni izvori</a>
-  <a href="srbija.html">Srbija — analiza nedelje</a>
-
-        
-  <a href="#">Naša planeta</a>
-</nav>
-
+        <a href="#">Geopolitika</a>
+        <a href="#">Obaveštajni izvori</a>
+        <a href="#">Kultura</a>
+        <a href="#">Srbija — analiza nedelje</a>
+        <a href="#">Naša planeta</a>
+      </nav>
       <div class="motto">Veritas ante omnia</div>
     </div>
   </header>
@@ -42,92 +38,45 @@
   <main class="page">
     <div class="wrap content-grid">
 
-      <!-- Leva kolona: GLAVNA VEST -->
-      <article class="feature" id="v1">
+      <!-- LEVA KOLONA: GLAVNA VEST -->
+      <!-- NOVA VEST (GLAVNA): MENJAJ SAMO NASLOV/DEK/SLIKU -->
+      <article class="feature">
         <header class="kicker">GEOPOLITIKA</header>
-        <h1 class="headline">Italija i Španija šalju ratne brodove u zaštitu flotile za Gazu</h1>
+        <h1 class="headline">Samit svetskih lidera u Minhenu: bezbednost, energija i nova linija podele</h1>
         <p class="dek">
-          Rimski i madridski potez da prate flotilu humanitarnih aktivista otvara novo poglavlje evropskog angažmana na Bliskom istoku.
-          Izrael upozorava na „neprihvatljivo mešanje“.
+          U fokusu razgovora su rat u Ukrajini, pritisci na energetske tokove i rastuće sajber pretnje.
+          Ton susreta otkriva sve dublju transformaciju Evrope u „kontinent tvrde bezbednosti“.
         </p>
         <figure class="feature-media">
-          <img src="img/vest1_flota.png" alt="Stilizovana flota ratnih brodova — editorial ilustracija" />
+          <!-- Ako nemaš sliku, ostavi vest1.jpg dok ne ubaciš novu -->
+          <img src="img/vest1.jpg" alt="Samit svetskih lidera u Minhenu" />
         </figure>
       </article>
-      <!-- Desna kolona: PRATEĆE VESTI -->
-<aside class="rail">
-  <ul class="rail-list">
 
-    <!-- 2) Tramp – kulturni rat -->
-    <li class="rail-item" id="v2">
-      <div class="rail-text">
-        <div class="kicker">GEOPOLITIKA</div>
+      <!-- DESNA KOLONA: PRIVREMENO PRAZNO + ARHIVA -->
+      <aside class="rail">
 
-        <a class="rail-title" href="#">
-          Tramp pokreće kulturni rat protiv Evrope
-        </a>
-        <div class="bydek">
-          Izveštaji ukazuju na podršku evropskoj krajnjoj desnici, sa ciljem potkopavanja liberalnih institucija i jedinstva EU.
-        </div>
-      </div>
-      <img class="rail-thumb" src="img/vest2_kulturni_rat.png?v=6" alt="Sukob narativa SAD i Evrope preko Atlantika">
-    </li>
+        <!-- PRIVREMENO: dok ne dodaš još vesti -->
+        <ul class="rail-list">
+          <li class="rail-item">
+            <div class="rail-text">
+              <div class="kicker">NOVI TALAS</div>
+              <a class="rail-title" href="#">Uskoro: još analiza i rubrika “Obaveštajni izvori”</a>
+              <div class="bydek">Ovo je početni broj nakon restarta. Sledeće vesti biće objavljene uskoro.</div>
+            </div>
+            <img class="rail-thumb" src="img/naslovna.png" alt="Novi Talas — najava">
+          </li>
+        </ul>
 
-    <!-- 3) Generalni štrajk u Italiji -->
-    <li class="rail-item" id="v3">
-      <div class="rail-text">
-        <div class="kicker">NAŠA PLANETA</div>
+        <!-- Arhiva broja -->
+        <figure class="issue-card">
+          <a href="img/naslovna.png" target="_blank" class="issue-link" aria-label="Novi Talas — naslovna">
+            <img src="img/naslovna.png" alt="Naslovna magazina NOVI TALAS" />
+          </a>
+          <figcaption class="issue-meta">BROJ 1 • FEBRUAR 2026</figcaption>
+        </figure>
 
-        <a class="rail-title" href="#">
-          Generalni štrajk u Italiji zbog rata u Gazi
-        </a>
-        <div class="bydek">
-          Rim, Milano i Đenova pod blokadama; autonomni sindikati zaustavljaju prevoz i deo javnih službi.
-        </div>
-      </div>
-      <img class="rail-thumb" src="img/vest3_strajk_italija.png?v=6" alt="Stilizovani protesti i blokade luka u Italiji">
-    </li>
-
-    <!-- 4) EU u UN – multilateralizam -->
-    <li class="rail-item" id="v4">
-      <div class="rail-text">
-        <div class="kicker">GEOPOLITIKA</div>
-
-        <a class="rail-title" href="#">
-          EU potvrđuje opredeljenost za multilateralizam
-        </a>
-        <div class="bydek">
-          Na 80. zasedanju UN evropski lideri insistiraju na jačanju međunarodnih institucija naspram rastućeg unilateralizma.
-        </div>
-      </div>
-      <img class="rail-thumb" src="img/vest4_un_eu.png?v=6" alt="Apstraktna UN sala i mreža multilateralnih veza">
-    </li>
-
-    <!-- 5) Poljska – NATO konsultacije -->
-    <li class="rail-item" id="v5">
-      <div class="rail-text">
-        <div class="kicker">OBAVEŠTAJNI IZVORI</div>
-
-        <a class="rail-title" href="#">
-          Poljska aktivira konsultacije u NATO zbog ruskih dronova
-        </a>
-        <div class="bydek">
-          Posle ulaska dronova u poljski vazdušni prostor, Varšava traži konsultacije po članu 4. NATO pojačava nadzor u sklopu „Eastern Sentry“.
-        </div>
-      </div>
-      <img class="rail-thumb" src="img/vest5_poljska_nato.png" alt="Radarski snopovi i siluete dronova iznad granice">
-    </li>
-
-  </ul>
-
-  <!-- Arhiva broja -->
-  <figure class="issue-card">
-    <a href="img/naslovna.png" target="_blank" class="issue-link" aria-label="Novi Talas — naslovna">
-      <img src="img/naslovna.png" alt="Naslovna magazina NOVI TALAS" />
-    </a>
-    <figcaption class="issue-meta">BROJ 1 • SEPTEMBAR 2025</figcaption>
-  </figure>
-</aside>
+      </aside>
 
     </div>
   </main>
